@@ -67,7 +67,7 @@ namespace Diamond.ConsoleApp
             return returnedInputDouble;
         }
 
-        public decimal verifiedDoubleDecimal(string message)
+        public decimal verifiedDecimalInput(string message)
         {
             decimal returnedInputDecimal;
 
@@ -87,6 +87,28 @@ namespace Diamond.ConsoleApp
             }
 
             return returnedInputDecimal;
+        }
+
+        public float verifiedFloatInput(string message)
+        {
+            float returnedInputFloat;
+
+            while (true)
+            {
+                string inputStr = createInput(message);
+
+                if (float.TryParse(inputStr, out float inputFloat))
+                {
+                    returnedInputFloat = inputFloat;
+                    break;
+                }
+                else
+                {
+                    showErrorMessage("decimal");
+                }
+            }
+
+            return returnedInputFloat;
         }
     }
 }
