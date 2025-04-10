@@ -7,6 +7,9 @@
             Console.Write("Digite um número ímpar para criar um diamante: ");
             int numberDiamond = int.Parse(Console.ReadLine());
 
+            // matriz que armazena o diamante
+            string[,] diamondMatrix = new string[numberDiamond, numberDiamond];
+
             int contFilledSpaces = 1;
 
             // Calcula a linha do meio do diamente
