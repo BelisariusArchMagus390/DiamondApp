@@ -8,6 +8,7 @@ namespace Diamond.ConsoleApp
 {
     internal class Diamond
     {
-        
+        public static int Size = 0;
+        public string[,] DiamondMatrix = new string[Size, Size];
     }
 }
