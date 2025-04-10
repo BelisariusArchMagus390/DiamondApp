@@ -9,10 +9,18 @@ namespace Diamond.ConsoleApp
 {
     internal class VerifiedInput
     {
-        public string createInput(string message)
+        private string createInput(string message)
         {
             Console.Write(message);
             return Console.ReadLine();
+        }
+
+        private void showErrorMessage(string typeError)
+        {
+            Console.Clear();
+            Console.WriteLine($"\n Erro! A entrada digitada contém múltiplos elementos ou não é do tipo: {typeError}");
+            Console.WriteLine(" Aperte Enter para continuar...");
+            Console.ReadLine();
         }
 
         public int verifiedIntInput(string message)
@@ -30,10 +38,7 @@ namespace Diamond.ConsoleApp
                 }
                 else
                 {
-                    Console.Clear();
-                    Console.WriteLine("\n Erro! Foi digitado letras ou múltiplos números.");
-                    Console.WriteLine(" Aperte Enter para continuar...");
-                    Console.ReadLine();
+                    showErrorMessage("inteiro");
                 }
             }
 
