@@ -39,7 +39,6 @@ namespace Diamond.ConsoleApp
                         returnedInputInt = inputInt;
                         break;
                     }
-                        
                 }
                 else
                 {
@@ -64,7 +63,6 @@ namespace Diamond.ConsoleApp
                         returnedInputInt = inputInt;
                         break;
                     }
-
                 }
                 else
                 {
