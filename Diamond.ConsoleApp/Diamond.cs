@@ -59,5 +59,10 @@ namespace Diamond.ConsoleApp
                 Console.WriteLine();
             }
         }
+
+        public void animatedDiamond()
+        {
+
+        }
     }
 }

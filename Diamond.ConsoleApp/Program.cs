@@ -17,7 +17,8 @@
                 Console.Clear();
                 Console.WriteLine("\n 1 - Criar diamante");
                 Console.WriteLine(" 2 - Mostrar diamante");
-                Console.WriteLine(" 3 - Sair");
+                Console.WriteLine(" 3 - Diamante animado");
+                Console.WriteLine(" 4 - Sair");
 
                 Console.Write("\n Escolha uma das opções: ");
                 char optionMenu = Console.ReadLine()[0];
@@ -54,6 +55,15 @@
                     // sai do programa
                     case '3':
                         optionExit = true;
+                        break;
+
+                    case '4':
+                        Console.Clear();
+
+                        d.animatedDiamond();
+
+                        Console.WriteLine("\n Aperte Enter para continuar...");
+                        Console.ReadLine();
                         break;
 
                     // erro de entrada da opção
