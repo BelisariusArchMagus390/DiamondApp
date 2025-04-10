@@ -18,9 +18,34 @@ namespace Diamond.ConsoleApp
         private void showErrorMessage(string typeError)
         {
             Console.Clear();
-            Console.WriteLine($"\n Erro! A entrada digitada contém múltiplos elementos ou não é do tipo: {typeError}");
+            Console.WriteLine($"\n Erro! A entrada digitada contém múltiplos elementos ou não é do tipo: {typeError}.");
             Console.WriteLine(" Aperte Enter para continuar...");
             Console.ReadLine();
+        }
+
+        public int verifiedOddIntInput(string message)
+        {
+            int returnedInputInt;
+
+            while (true)
+            {
+                string inputStr = createInput(message);
+
+                if (int.TryParse(inputStr, out int inputInt))
+                {
+                    if ((inputInt % 2) != 0)
+                    {
+                        returnedInputInt = inputInt;
+                        break;
+                    }
+                        
+                }
+                else
+                {
+                    showErrorMessage("inteiro ímpar");
+                }
+            }
+            return returnedInputInt;
         }
 
         public int verifiedIntInput(string message)
