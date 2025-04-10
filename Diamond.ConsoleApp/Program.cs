@@ -29,7 +29,6 @@
                         Console.Clear();
 
                         message = " Digite um número ímpar para criar um diamante: ";
-                        Console.WriteLine();
                         sizeDiamond = vi.verifiedOddIntInput(message);
 
                         d.createDiamond(sizeDiamond);
@@ -60,7 +59,7 @@
                     // erro de entrada da opção
                     default:
                         Console.Clear();
-                        Console.WriteLine(" Erro! Opção incorreta.");
+                        Console.WriteLine("\n Erro! Opção incorreta.");
                         Console.WriteLine(" Aperte Enter para continuar...");
                         Console.ReadLine();
                         break;

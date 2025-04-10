@@ -11,6 +11,7 @@ namespace Diamond.ConsoleApp
     {
         private string createInput(string message)
         {
+            Console.WriteLine();
             Console.Write(message);
             return Console.ReadLine();
         }
