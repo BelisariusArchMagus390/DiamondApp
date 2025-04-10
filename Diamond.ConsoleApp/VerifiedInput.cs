@@ -21,6 +21,7 @@ namespace Diamond.ConsoleApp
             Console.WriteLine($"\n Erro! A entrada digitada contém múltiplos elementos ou não é do tipo: {typeError}.");
             Console.WriteLine(" Aperte Enter para continuar...");
             Console.ReadLine();
+            Console.Clear();
         }
 
         public int verifiedOddIntInput(string message)

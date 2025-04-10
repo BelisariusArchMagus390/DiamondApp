@@ -4,8 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Digite um número ímpar para criar um diamante: ");
-            int numberDiamond = int.Parse(Console.ReadLine());
+            VerifiedInput vi = new VerifiedInput();
+
+            string message = " Digite um número ímpar para criar um diamante: ";
+            int numberDiamond = vi.verifiedOddIntInput(message);
 
             // matriz que armazena o diamante
             string[,] diamondMatrix = new string[numberDiamond, numberDiamond];
