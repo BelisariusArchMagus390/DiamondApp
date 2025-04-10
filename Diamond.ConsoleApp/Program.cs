@@ -12,21 +12,21 @@
 
             int contFilledSpaces = 1;
 
-            // Calcula a linha do meio do diamente
+            // calcula a linha do meio do diamente
             decimal temporaryValue = numberDiamond;
             decimal midDiamondLine = Math.Ceiling(temporaryValue / 2);
 
             for (int line = 1; line <= numberDiamond; line++)
             {
-                // Define a quantidade de espaços em branco que tem antes e depois dos espaços preenchidos
+                // define a quantidade de espaços em branco que tem antes e depois dos espaços preenchidos
                 int qtWhiteSpaces = (numberDiamond - contFilledSpaces) / 2;
 
                 for (int column = 1; column <= numberDiamond; column++)
                 {
                     if ((column <= qtWhiteSpaces) || (column > (numberDiamond - qtWhiteSpaces) && column <= numberDiamond))
-                        diamondMatrix[line, column] = " ";
+                        diamondMatrix[(line-1), (column-1)] = " ";
                     else
-                        diamondMatrix[line, column] = "x";
+                        diamondMatrix[(line-1), (column-1)] = "x";
                 }
                 // compara para saber se está no meio do diamante
                 if (line == (numberDiamond - 1))
@@ -38,8 +38,6 @@
                     else
                         contFilledSpaces += 2;
                 }
-
-                Console.WriteLine();
             }
 
             Console.ReadLine();
