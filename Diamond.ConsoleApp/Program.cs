@@ -40,6 +40,17 @@
                 }
             }
 
+            // mostra a matriz diamondMatrix
+            for (int line = 0; line < numberDiamond; line++)
+            {
+                Console.Write(" ");
+                for (int column = 0; column < numberDiamond; column++)
+                {
+                    Console.Write(diamondMatrix[line,column]);
+                }
+                Console.WriteLine();
+            }
+
             Console.ReadLine();
         }
     }
