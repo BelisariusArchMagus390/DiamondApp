@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Digite um número ímpara para criar um diamante: ");
+            int numberDiamond = int.Parse(Console.ReadLine());
         }
     }
 }
