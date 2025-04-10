@@ -41,7 +41,6 @@ namespace Diamond.ConsoleApp
                     showErrorMessage("inteiro");
                 }
             }
-
             return returnedInputInt;
         }
 
@@ -63,7 +62,6 @@ namespace Diamond.ConsoleApp
                     showErrorMessage("decimal");
                 }
             }
-
             return returnedInputDouble;
         }
 
@@ -85,7 +83,6 @@ namespace Diamond.ConsoleApp
                     showErrorMessage("decimal");
                 }
             }
-
             return returnedInputDecimal;
         }
 
@@ -107,8 +104,28 @@ namespace Diamond.ConsoleApp
                     showErrorMessage("decimal");
                 }
             }
-
             return returnedInputFloat;
+        }
+
+        public bool verifiedBoolInput(string message)
+        {
+            bool returnedInputBool;
+
+            while (true)
+            {
+                string inputStr = createInput(message);
+
+                if (bool.TryParse(inputStr, out bool inputBool))
+                {
+                    returnedInputBool = inputBool;
+                    break;
+                }
+                else
+                {
+                    showErrorMessage("decimal");
+                }
+            }
+            return returnedInputBool;
         }
     }
 }
