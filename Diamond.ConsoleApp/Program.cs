@@ -26,12 +26,13 @@
                 {
                     case '1':
                         Console.Clear();
-                        // cria o diamante
-                        d.createDiamond(sizeDiamond);                        
 
                         message = " Digite um número ímpar para criar um diamante: ";
                         Console.WriteLine();
                         sizeDiamond = vi.verifiedOddIntInput(message);
+
+                        // cria o diamante
+                        d.createDiamond(sizeDiamond);
                         break;
 
                     case '2':
@@ -47,7 +48,7 @@
                             Console.WriteLine($"\n Erro! O tamanho do diamante não foi especificado.");
                         }
 
-                        Console.WriteLine(" Aperte Enter para continuar...");
+                        Console.WriteLine("\n Aperte Enter para continuar...");
                         Console.ReadLine();
                         break;
 
