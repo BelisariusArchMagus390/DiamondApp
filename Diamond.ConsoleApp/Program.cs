@@ -24,9 +24,9 @@
                 for (int column = 1; column <= numberDiamond; column++)
                 {
                     if ((column <= qtWhiteSpaces) || (column > (numberDiamond - qtWhiteSpaces) && column <= numberDiamond))
-                        Console.Write(" ");
+                        diamondMatrix[line, column] = " ";
                     else
-                        Console.Write("x");
+                        diamondMatrix[line, column] = "x";
                 }
                 // compara para saber se está no meio do diamante
                 if (line == (numberDiamond - 1))
