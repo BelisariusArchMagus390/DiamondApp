@@ -48,6 +48,31 @@ namespace Diamond.ConsoleApp
             return returnedInputInt;
         }
 
+        public int verifiedEvenIntInput(string message)
+        {
+            int returnedInputInt;
+
+            while (true)
+            {
+                string inputStr = createInput(message);
+
+                if (int.TryParse(inputStr, out int inputInt))
+                {
+                    if ((inputInt % 2) == 0)
+                    {
+                        returnedInputInt = inputInt;
+                        break;
+                    }
+
+                }
+                else
+                {
+                    showErrorMessage("inteiro par");
+                }
+            }
+            return returnedInputInt;
+        }
+
         public int verifiedIntInput(string message)
         {
             int returnedInputInt;
