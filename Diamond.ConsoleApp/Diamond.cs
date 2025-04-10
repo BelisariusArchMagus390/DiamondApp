@@ -47,5 +47,18 @@ namespace Diamond.ConsoleApp
                 }
             }
         }
+
+        public void showDiamond()
+        {
+            for (int line = 0; line < Size; line++)
+            {
+                Console.Write(" ");
+                for (int column = 0; column < Size; column++)
+                {
+                    Console.Write(DiamondMatrix[line, column]);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
