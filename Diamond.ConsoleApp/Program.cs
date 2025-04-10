@@ -24,6 +24,7 @@
 
                 switch (optionMenu)
                 {
+                    // cria o diamante
                     case '1':
                         Console.Clear();
 
@@ -31,16 +32,15 @@
                         Console.WriteLine();
                         sizeDiamond = vi.verifiedOddIntInput(message);
 
-                        // cria o diamante
                         d.createDiamond(sizeDiamond);
                         break;
 
+                    // mostra o diamante
                     case '2':
                         Console.Clear();
 
                         if (sizeDiamond != 0)
                         {
-                            // mostra o diamante
                             d.showDiamond();
                         }
                         else
@@ -52,10 +52,12 @@
                         Console.ReadLine();
                         break;
 
+                    // sai do programa
                     case '3':
                         optionExit = true;
                         break;
 
+                    // erro de entrada da opção
                     default:
                         Console.Clear();
                         Console.WriteLine(" Erro! Opção incorreta.");

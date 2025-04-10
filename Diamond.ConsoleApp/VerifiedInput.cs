@@ -24,6 +24,7 @@ namespace Diamond.ConsoleApp
             Console.Clear();
         }
 
+        // verifica entrada do tipo int ímpar
         public int verifiedOddIntInput(string message)
         {
             int returnedOddIntInput;
@@ -50,6 +51,7 @@ namespace Diamond.ConsoleApp
             return returnedOddIntInput;
         }
 
+        // verifica entrada do tipo int par
         public int verifiedEvenIntInput(string message)
         {
             int returnedEvenIntInput;
@@ -76,6 +78,7 @@ namespace Diamond.ConsoleApp
             return returnedEvenIntInput;
         }
 
+        // verifica entrada do tipo int
         public int verifiedIntInput(string message)
         {
             int returnedInputInt;
@@ -97,6 +100,7 @@ namespace Diamond.ConsoleApp
             return returnedInputInt;
         }
 
+        // verifica entrada do tipo double
         public double verifiedDoubleInput(string message)
         {
             double returnedInputDouble;
@@ -118,6 +122,7 @@ namespace Diamond.ConsoleApp
             return returnedInputDouble;
         }
 
+        // verifica entrada do tipo decimal
         public decimal verifiedDecimalInput(string message)
         {
             decimal returnedInputDecimal;
@@ -139,6 +144,7 @@ namespace Diamond.ConsoleApp
             return returnedInputDecimal;
         }
 
+        // verifica entrada do tipo float
         public float verifiedFloatInput(string message)
         {
             float returnedInputFloat;
@@ -160,6 +166,7 @@ namespace Diamond.ConsoleApp
             return returnedInputFloat;
         }
 
+        // verifica entrada do tipo bool
         public bool verifiedBoolInput(string message)
         {
             bool returnedInputBool;

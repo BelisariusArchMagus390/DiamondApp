@@ -14,7 +14,6 @@ namespace Diamond.ConsoleApp
         public void createDiamond(int size)
         {
             Size = size;
-
             DiamondMatrix = new string[Size, Size];
 
             int contFilledSpaces = 1;
