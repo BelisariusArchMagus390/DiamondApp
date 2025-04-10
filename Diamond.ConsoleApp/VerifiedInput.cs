@@ -9,9 +9,9 @@ namespace Diamond.ConsoleApp
 {
     internal class VerifiedInput
     {
-        public string createInput()
+        public string createInput(string message)
         {
-            Console.Write("\n Digite o número que quer verificar se é um primo: ");
+            Console.Write(message);
             return Console.ReadLine();
         }
     }
