@@ -44,5 +44,27 @@ namespace Diamond.ConsoleApp
 
             return returnedInputInt;
         }
+
+        public double verifiedDoubleInput(string message)
+        {
+            double returnedInputDouble;
+
+            while (true)
+            {
+                string inputStr = createInput(message);
+
+                if (double.TryParse(inputStr, out double inputDouble))
+                {
+                    returnedInputDouble = inputDouble;
+                    break;
+                }
+                else
+                {
+                    showErrorMessage("decimal");
+                }
+            }
+
+            return returnedInputDouble;
+        }
     }
 }
