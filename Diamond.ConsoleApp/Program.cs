@@ -30,6 +30,7 @@
                         d.createDiamond(sizeDiamond);                        
 
                         message = " Digite um número ímpar para criar um diamante: ";
+                        Console.WriteLine();
                         sizeDiamond = vi.verifiedOddIntInput(message);
                         break;
 

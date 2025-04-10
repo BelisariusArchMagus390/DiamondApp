@@ -26,7 +26,7 @@ namespace Diamond.ConsoleApp
 
         public int verifiedOddIntInput(string message)
         {
-            int returnedInputInt;
+            int returnedOddIntInput;
 
             while (true)
             {
@@ -36,21 +36,23 @@ namespace Diamond.ConsoleApp
                 {
                     if ((inputInt % 2) != 0)
                     {
-                        returnedInputInt = inputInt;
+                        returnedOddIntInput = inputInt;
                         break;
                     }
+                    else
+                        showErrorMessage("inteiro ímpar");
                 }
                 else
                 {
                     showErrorMessage("inteiro ímpar");
                 }
             }
-            return returnedInputInt;
+            return returnedOddIntInput;
         }
 
         public int verifiedEvenIntInput(string message)
         {
-            int returnedInputInt;
+            int returnedEvenIntInput;
 
             while (true)
             {
@@ -60,16 +62,18 @@ namespace Diamond.ConsoleApp
                 {
                     if ((inputInt % 2) == 0)
                     {
-                        returnedInputInt = inputInt;
+                        returnedEvenIntInput = inputInt;
                         break;
                     }
+                    else
+                        showErrorMessage("inteiro par");
                 }
                 else
                 {
                     showErrorMessage("inteiro par");
                 }
             }
-            return returnedInputInt;
+            return returnedEvenIntInput;
         }
 
         public int verifiedIntInput(string message)
